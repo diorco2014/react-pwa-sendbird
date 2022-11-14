@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import "@sendbird/uikit-react/dist/index.css";
+import SendbirdApp from "@sendbird/uikit-react/App";
+
+const APP_ID = String(process.env.REACT_APP_SENDBIRD_APP_KEY);
+const USER_ID = "yw01124"; // 이메일
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SendbirdApp
+        appId={APP_ID}
+        userId={USER_ID}
+        theme="light"
+        showSearchIcon={true}
+        disableUserProfile={true}
+        nickname={"예르"}
+      />{" "}
     </div>
   );
 }
