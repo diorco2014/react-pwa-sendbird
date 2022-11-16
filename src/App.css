@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 800px;
+  height: 500px;
+  border: 1px solid red;
+}
+
+.label {
+  font-size: 30px;
+}
+.input {
+  width: 200px;
+  height: 50px;
+}
+.chatbox {
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+}
